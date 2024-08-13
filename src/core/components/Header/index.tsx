@@ -2,7 +2,7 @@ import { Button, Col, Dropdown, Menu, Row, message } from "antd";
 
 import Auth from "@utils/helpers/auth";
 import { GlobalOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import LocaleContext from "@utils/contexts/Locale";
 import ResourceContext from "@utils/contexts/Resource";
 import { clear_customer_info } from "@store/actions/customer";
@@ -91,7 +91,7 @@ const Header = ({ authenticated }: Props) => {
       </header>
       <Menu mode="horizontal" style={{ height: "100%", border: 0 }}>
         <Menu.Item key="sample-page">
-          <Link to="/sample/sample-page">Sample Page</Link>
+          {/* <Link to="/sample/sample-page">Sample Page</Link> */}
         </Menu.Item>
       </Menu>
     </>

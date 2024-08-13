@@ -1,7 +1,7 @@
 import { Button, Col, Form, Input, Row } from "antd";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import useTranslate from "@core/hooks/useTranslate";
 
 interface Props {
@@ -64,13 +64,16 @@ const LoginForm = ({ loading }: Props) => {
       <Form.Item>
         <Row className="text-center">
           <Col span={8}>
-            <Link to="/signup">{t("common:signup")}</Link>
+            {/* <Link to="/signup">{t("common:signup")}</Link> */}
+            <a href='/signup'>{t("common:signup")}</a>
           </Col>
           <Col span={8}>
-            <Link to="/">{t("common:find-account")}</Link>
+            {/* <Link to="/">{t("common:find-account")}</Link> */}
+            <a href="/">{t("common:find-account")}</a>
           </Col>
           <Col span={8}>
-            <Link to="/">{t("common:find-password")}</Link>
+            {/* <Link to="/">{t("common:find-password")}</Link> */}
+            <a href="/">{t("common:find-password")}</a>
           </Col>
         </Row>
       </Form.Item>
